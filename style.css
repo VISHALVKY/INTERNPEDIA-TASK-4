@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightskyblue;
+    font-family: "Poppins", sans-serif;
+    overflow: auto;
+    padding: 2em 0; 
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 34em;
+    margin: 0 auto;
+}
+
+#new-task {
+    background-color: #ffffff;
+    padding: 1.8em 1.25em;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+}
+
+#new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #d1d3d4;
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+}
+
+#new-task input:focus {
+    outline: none;
+    border-color: #0b87ff;
+}
+
+#new-task button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #0b87ff;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.tasks-container {
+    background-color: #ffffff;
+    position: relative;
+    padding: 1.8em 1.25em;
+    margin-top: 1.5em;
+    width: 100%;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    border-radius: 0.6em;
+}
+
+.tasks-container h2 {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    background-color: #ffffff;
+    padding: 0.3em 0.6em;
+    margin-top: 0.6em;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+.task button {
+    color: #ffffff;
+    padding: 0.8em 0;
+    width: 3em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete {
+    background-color: #fb3b3b;
+}
+
+.edit {
+    background-color: #f0ad4e;
+}
+
+.complete {
+    background-color: #0b87ff;
+}

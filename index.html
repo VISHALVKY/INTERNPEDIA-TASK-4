@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="icon" href="assets/favicon.png">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fas fa-clipboard-check"></i>
+            Todo List</h1>
+        <br>
+        <div id="new-task">
+            <input type="text" placeholder="Enter The Task Here..." id="task-input" />
+            <button id="push">Add</button>
+        </div>
+        <div id="pending-tasks-container" class="tasks-container">
+            <h2><i class="fas fa-clock"></i> Pending Tasks</h2>
+            <ul id="pending-tasks"></ul>
+        </div>
+        <div id="completed-tasks-container" class="tasks-container">
+            <h2><i class="fas fa-check-circle"></i> Completed Tasks</h2>
+            <ul id="completed-tasks"></ul>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
